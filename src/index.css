@@ -1,0 +1,30 @@
+
+
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #ffd40d;
+  --color-secondary: #f3274c;
+  --color-accent:#f5f8fd;
+
+  
+}
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+  --color-text:#000;
+  --color-primary: #ffd40d;
+  --color-secondary: #f3274c;
+  --color-accent:#f5f8fd;
+
+  
+}
+
+@theme{
+  --font-fredoka: "Fredoka", sans-serif;
+--font-epilogue:"Epilogue", sans-serif;
+--font-sacromento:"Sacramento", cursive;
+}
+

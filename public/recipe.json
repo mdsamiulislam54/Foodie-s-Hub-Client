@@ -1,0 +1,157 @@
+[
+  {
+    "title": "Chicken Manchurian",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYb9YjRmFctbk1x5SP9mfsgm8I9O1Hf-Sz6g&s",
+    "categories": ["Appetizer", "Main Course"],
+    "cuisineType": "Chinese",
+    "ingredients": [
+      "Chicken",
+      "Soy Sauce",
+      "Garlic",
+      "Ginger",
+      "Cornflour"
+    ],
+    "instructions": "Mix chicken with spices, fry, then cook in Manchurian sauce.",
+    "preparationTime": "30 minutes",
+    "likeCount": 120
+  },
+  {
+    "title": "Chow Mein",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLHWuQ7G4IK-wgyW-0ridvE4dGnCFLFZuf2w&s",
+    "categories": ["Main Course"],
+    "cuisineType": "Chinese",
+    "ingredients": [
+      "Noodles",
+      "Vegetables",
+      "Soy Sauce",
+      "Garlic"
+    ],
+    "instructions": "Boil noodles, stir-fry with vegetables and sauces.",
+    "preparationTime": "20 minutes",
+    "likeCount": 85
+  },
+  {
+    "title": "Egg Fried Rice",
+    "image": "https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2020/02/Egg-Fried-Rice-2.jpg?fit=1300%2C867&ssl=1",
+    "categories": ["Main Course"],
+    "cuisineType": "Chinese",
+    "ingredients": [
+      "Rice",
+      "Egg",
+      "Vegetables",
+      "Soy Sauce",
+      "Spring Onion"
+    ],
+    "instructions": "Stir-fry rice with scrambled eggs, veggies, and sauces.",
+    "preparationTime": "25 minutes",
+    "likeCount": 150
+  },
+  {
+    "title": "Sweet and Sour Chicken",
+    "image": "https://mymorningmocha.com/wp-content/uploads/2023/08/Sweet-And-Sour-Chicken-Recipe.jpg",
+    "categories": ["Main Course"],
+    "cuisineType": "Chinese",
+    "ingredients": [
+      "Chicken",
+      "Capsicum",
+      "Pineapple",
+      "Sweet-Sour Sauce"
+    ],
+    "instructions": "Fry chicken, mix with vegetables and sweet-sour sauce.",
+    "preparationTime": "35 minutes",
+    "likeCount": 110
+  },
+  {
+    "title": "Hakka Noodles",
+    "image": "https://vegecravings.com/wp-content/uploads/2017/03/veg-hakka-noodles-recipe-with-step-by-step-instructions.jpg",
+    "categories": ["Main Course"],
+    "cuisineType": "Chinese",
+    "ingredients": [
+      "Noodles",
+      "Carrot",
+      "Cabbage",
+      "Bell Pepper",
+      "Soy Sauce"
+    ],
+    "instructions": "Boil noodles, stir-fry with veggies and sauces.",
+    "preparationTime": "20 minutes",
+    "likeCount": 98
+  },
+  {
+    "title": "Chicken Lollipop",
+    "image": "https://www.cafegoldenfeast.com/wp-content/uploads/2025/01/Chicken-Lollipop.jpg",
+    "categories": ["Appetizer"],
+    "cuisineType": "Chinese",
+    "ingredients": [
+      "Chicken Wings",
+      "Garlic",
+      "Ginger",
+      "Spices",
+      "Cornflour"
+    ],
+    "instructions": "Marinate wings, deep fry until crispy.",
+    "preparationTime": "40 minutes",
+    "likeCount": 200
+  },
+  {
+    "title": "Hot and Sour Soup",
+    "image": "https://cicili.tv/wp-content/uploads/2024/10/Seafood-Hot-and-Sour-Soup-Small-4-1200x675.jpg",
+    "categories": ["Soup"],
+    "cuisineType": "Chinese",
+    "ingredients": [
+      "Chicken",
+      "Mushroom",
+      "Carrot",
+      "Vinegar",
+      "Soy Sauce"
+    ],
+    "instructions": "Cook chicken and vegetables in spicy sour broth.",
+    "preparationTime": "30 minutes",
+    "likeCount": 135
+  },
+  {
+    "title": "Schezwan Fried Rice",
+    "image": "https://www.veganricha.com/wp-content/uploads/2023/09/Schezwan-Rice-0955.jpg",
+    "categories": ["Main Course"],
+    "cuisineType": "Chinese",
+    "ingredients": [
+      "Rice",
+      "Schezwan Sauce",
+      "Vegetables",
+      "Egg"
+    ],
+    "instructions": "Stir-fry rice with Schezwan sauce and vegetables.",
+    "preparationTime": "25 minutes",
+    "likeCount": 160
+  },
+  {
+    "title": "Paneer Chilli",
+    "image": "https://www.yummytummyaarthi.com/wp-content/uploads/2023/06/chilli-paneer-1.jpeg",
+    "categories": ["Appetizer"],
+    "cuisineType": "Chinese",
+    "ingredients": [
+      "Paneer",
+      "Capsicum",
+      "Onion",
+      "Soy Sauce"
+    ],
+    "instructions": "Fry paneer, toss with sauces and vegetables.",
+    "preparationTime": "20 minutes",
+    "likeCount": 145
+  },
+  {
+    "title": "Spring Roll",
+    "image": "https://static01.nyt.com/images/2023/12/21/multimedia/AS-Spring-Rolls-bzjt/AS-Spring-Rolls-bzjt-threeByTwoMediumAt2X.jpg",
+    "categories": ["Appetizer"],
+    "cuisineType": "Chinese",
+    "ingredients": [
+      "Spring Roll Sheets",
+      "Vegetables",
+      "Noodles",
+      "Spices"
+    ],
+    "instructions": "Stuff rolls, deep fry until crispy golden.",
+    "preparationTime": "30 minutes",
+    "likeCount": 130
+  }
+]

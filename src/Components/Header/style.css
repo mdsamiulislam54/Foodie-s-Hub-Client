@@ -1,0 +1,20 @@
+.item {
+  position: relative;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #ffd40d;
+  transition: all 0.3s ease;
+}
+
+.item:hover::before {
+  width: 100%;
+}
+
+
