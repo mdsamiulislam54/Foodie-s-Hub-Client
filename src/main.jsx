@@ -15,6 +15,12 @@ import MyRecipes from "./Components/MyRecipes/MyRecipes.jsx";
 import AllRecipes from "./Components/AllRecipes/AllRecipes.jsx";
 import Details from "./Components/DetailsRecipes/Details.jsx";
 import PlanLayout from "./Layout/PlanLayout.jsx";
+import Wishlist from "./Page/Wishlist/Wishlist.jsx";
+
+import { WishlistProvider } from "./ContextApi/WishListContex/WishlistProvider.jsx";
+import BlogRecipe from "./Page/Blog/BlogRecipe.jsx";
+import BlogDetails from "./Page/BlogDetails/BlogDetails.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -48,9 +54,9 @@ const router = createBrowserRouter([
       {
         path: "/all-recipe",
        
-        element:<PrivateRouter>
+        element:
           <AllRecipes/>
-        </PrivateRouter>
+        
       },
       {
         path: "/details/:id",
@@ -59,6 +65,20 @@ const router = createBrowserRouter([
           <Details/>
         </PrivateRouter>
       },
+      {
+        path:'/wishlist',
+        Component:Wishlist
+      },
+      {
+        path:'/blogs',
+        Component:BlogRecipe
+      },
+      {
+        path:"blog-details/:id",
+        loader: ({params}) => fetch(`http://localhost:5000/blog-details/${params.id}`),
+        element:<BlogDetails/>
+          
+      }
 
     ],
   },
@@ -78,7 +98,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <UserProvider>
+      <WishlistProvider>
       <RouterProvider router={router}></RouterProvider>
+      </WishlistProvider>
     </UserProvider>
   </StrictMode>
 );

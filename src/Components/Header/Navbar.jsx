@@ -8,11 +8,16 @@ import { FaBars, FaClipboardList, FaTimes } from "react-icons/fa";
 import { UserContext } from "../../ContextApi/userContext";
 import Swal from "sweetalert2";
 import { AnimatePresence, motion } from "framer-motion";
+import WishlistContext from "../../ContextApi/WishListContex/WhislistContext";
+import WishlistCart from "../../Page/WishlistCart/WishlistCart";
 
 const Navbar = () => {
   const [theme, setTheme] = useState("");
   const [scrollY, setScrollY] = useState(0);
   const [isShowMobileMenu, setShowMobileMenu] = useState(false);
+
+  const { wishlistData } = useContext(WishlistContext);
+  const [isWishlist, setIsWishlist] = useState(false);
 
   const location = useLocation();
 
@@ -63,6 +68,10 @@ const Navbar = () => {
   }, []);
   const isHome = location.pathname === "/";
 
+  const handleWishlistToggle = () => {
+  setIsWishlist(!isWishlist);
+};
+
   return (
     <nav
       className={`
@@ -80,9 +89,23 @@ const Navbar = () => {
       
     `}
     >
+      <AnimatePresence>
+        {isWishlist && (
+        <motion.div 
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: 100 }}
+        transition={{ duration: 0.3 }}
+        
+        className=''>
+          <WishlistCart isClose={handleWishlistToggle} />
+        </motion.div>
+      )}
+      </AnimatePresence>
+
       <div className="w-10/12 mx-auto overflow-x-hidden">
         <div className="flex items-center justify-between py-3">
-          <span className="flex items-center">
+          <div className="flex items-center">
             <Link
               to={"/"}
               className="xl:text-3xl text-xl font-fredoka font-bold"
@@ -101,7 +124,7 @@ const Navbar = () => {
             <button className=" xl:py-[11px] py-[10px] px-4 bg-primary  max-lg:hidden rounded-tr-md rounded-br-md text-black  hover:bg-primary/80 cursor-pointer transition-all duration-300">
               Search
             </button>
-          </span>
+          </div>
           <div className="flex items-center gap-4  max-lg:hidden  ">
             <div
               className="tooltip tooltip-bottom mx-4"
@@ -146,7 +169,7 @@ const Navbar = () => {
             />
           </div>
         </div>
-         <div className="w-full flex justify-between items-center py-4 max-lg:hidden pr-3">
+        <div className="w-full flex justify-between items-center py-4 max-lg:hidden pr-3">
           <div className="space-x-10">
             <Link to={"/"} className="lg:text-md  font-bold item">
               Home
@@ -166,6 +189,9 @@ const Navbar = () => {
             <Link to={"/*"} className="lg:text-md  font-bold item">
               Dashboard
             </Link>
+            <Link to={"/*"} className="lg:text-md  font-bold item">
+              Contact Us
+            </Link>
           </div>
           <div className="flex gap-5 items-center">
             <Link onClick={toggleTheme}>
@@ -175,10 +201,13 @@ const Navbar = () => {
                 <IoSunnyOutline size={30} />
               )}
             </Link>
-            <Link className="relative">
+            <Link
+              onClick={() => handleWishlistToggle()}
+              className="relative"
+            >
               <FaClipboardList size={30} />
               <p className="absolute -top-2 -right-2 font-bold bg-primary rounded-full px-1.5 text-black">
-                0
+                {wishlistData.length || 0}
               </p>
             </Link>
           </div>
@@ -187,63 +216,80 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <AnimatePresence>
           {isShowMobileMenu && (
-            
-              <motion.div 
-              initial={{opacity: 0, x: 100}}
-              animate={{opacity: 1, x: 0}}
-              exit={{opacity: 0, x: 100}}
-              transition={{duration: 0.3}}
-              
-              className="absolute w-[70%] right-0 top-0 h-screen bg-base-100 shadow-2xl  p-10 z-100">
-                <div className="flex justify-between items-center mb-6">
-                  <h2 className="text-3xl font-fredoka font-bold">
-                    Foodie's
-                    <span className="bg-primary px-1 rounded-md text-black">
-                      {" "}
-                      Hub
-                    </span>
-                  </h2>
-                  <FaTimes
-                    size={28}
-                    className="cursor-pointer"
-                    onClick={() => setShowMobileMenu(!isShowMobileMenu)}
-                  />
-                </div>
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 100 }}
+              transition={{ duration: 0.3 }}
+              className="absolute w-[70%] right-0 top-0 h-screen bg-base-100 shadow-2xl  p-10 z-100"
+            >
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-3xl font-fredoka font-bold">
+                  Foodie's
+                  <span className="bg-primary px-1 rounded-md text-black">
+                    {" "}
+                    Hub
+                  </span>
+                </h2>
+                <FaTimes
+                  size={28}
+                  className="cursor-pointer"
+                  onClick={() => setShowMobileMenu(!isShowMobileMenu)}
+                />
+              </div>
 
-                <div className="flex">
-                  <input
-                    type="text"
-                    placeholder="Search Recipes..."
-                    className="input input-bordered w-full mb-4"
-                  />
-                  <button className="btn bg-primary   ">Search</button>
-                </div>
+              <div className="flex">
+                <input
+                  type="text"
+                  placeholder="Search Recipes..."
+                  className="input input-bordered w-full mb-4"
+                />
+                <button className="btn bg-primary   ">Search</button>
+              </div>
 
-                <div className="flex flex-col gap-4 ">
-                  <Link to="/">Home</Link>
-                  <Link to="/all-recipe">All Recipes</Link>
-                  <Link to="/add-recipe">Add Recipe</Link>
-                  <Link to="/my-recipes">My Recipes</Link>
-                  <Link to="/*">Blog</Link>
-                </div>
+              <div className="flex flex-col gap-4 ">
+                <Link to="/" className="lg:text-md  font-bold ">
+                  Home
+                </Link>
+                <Link to="/all-recipe" className="lg:text-md  font-bold ">
+                  All Recipes
+                </Link>
+                <Link to="/add-recipe" className="lg:text-md  font-bold ">
+                  Add Recipe
+                </Link>
+                <Link to="/my-recipes" className="lg:text-md  font-bold ">
+                  My Recipes
+                </Link>
+                <Link to="/*" className="lg:text-md  font-bold ">
+                  All Blog
+                </Link>
+                <Link to={"/*"} className="lg:text-md  font-bold ">
+                  Dashboard
+                </Link>
+                <Link to={"/*"} className="lg:text-md  font-bold ">
+                  Contact Us
+                </Link>
+              </div>
 
-                <div className="mt-6 flex items-center gap-4">
-                  <div onClick={toggleTheme} className="cursor-pointer">
-                    {theme === "light" ? (
-                      <IoSunny size={25} />
-                    ) : (
-                      <IoSunnyOutline size={25} />
-                    )}
-                  </div>
-                  <Link>
-                    <FaClipboardList size={30} />
-                  </Link>
-                  <Link className="btn px-5 bg-primary text-white rounded-md">
-                    Login
-                  </Link>
+              <div className="mt-6 flex items-center gap-4">
+                <div onClick={toggleTheme} className="cursor-pointer">
+                  {theme === "light" ? (
+                    <IoSunny size={25} />
+                  ) : (
+                    <IoSunnyOutline size={25} />
+                  )}
                 </div>
-              </motion.div>
-           
+                <Link>
+                  <FaClipboardList size={30} />
+                </Link>
+                <Link
+                  to={"/login"}
+                  className="btn px-5 bg-primary text-white rounded-md"
+                >
+                  Login
+                </Link>
+              </div>
+            </motion.div>
           )}
         </AnimatePresence>
       </div>

@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer'
 import OurTeam from './Components/OurTeam/OurTeam'
 import Testimonials from './Components/Testimonials/Testimonials'
 import TopRecipe from './Components/TopRecipes/TopRecipe'
+import BlogRecipe from './Page/Blog/BlogRecipe'
 
 function App() {
 
@@ -22,7 +23,11 @@ function App() {
       <section>
         <Addrecipe/>
       </section>
+
       <section>
+        <BlogRecipe/>
+      </section>
+            <section>
         <Testimonials/>
       </section>
       <section>

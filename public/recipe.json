@@ -1,157 +1,152 @@
 [
   {
-    "title": "Chicken Manchurian",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYb9YjRmFctbk1x5SP9mfsgm8I9O1Hf-Sz6g&s",
-    "categories": ["Appetizer", "Main Course"],
-    "cuisineType": "Chinese",
-    "ingredients": [
-      "Chicken",
-      "Soy Sauce",
-      "Garlic",
-      "Ginger",
-      "Cornflour"
+  
+    "title": "Classic Beef Burger",
+    "coverImage": "https://imageresizer.static9.net.au/zco3XcHe-jjlSGmb0XoxLTohssc=/600x338/smart/https%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2FImages%2FKitchen%2F2011%2F09%2F22%2F11%2F35%2Fclassic-burger.jpg",
+    "content": [
+      "The perfect homemade beef burger with juicy patty, melted cheese, and fresh toppings. Makes 4 burgers (Prep: 20 mins, Cook: 10 mins).",
+
+      "Ingredients:\n- 500g ground beef (80% lean)\n- 1 egg\n- 1/4 cup breadcrumbs\n- 1 tbsp Worcestershire sauce\n- 1 tsp garlic powder\n- 1 tsp onion powder\n- Salt & pepper to taste\n- 4 burger buns\n- 4 cheese slices\n- Lettuce, tomato, onion for serving\n- Condiments of choice",
+
+      "Instructions:\n1. In large bowl, mix beef, egg, breadcrumbs, Worcestershire sauce and seasonings.\n2. Divide into 4 equal portions, form into 1-inch thick patties.\n3. Make slight indentation in center of each patty to prevent bulging.\n4. Preheat grill/pan to medium-high heat.\n5. Cook patties 4-5 minutes per side for medium doneness.\n6. Add cheese during last minute of cooking.\n7. Toast buns lightly.\n8. Assemble burgers with patties and desired toppings.",
+
+      "Tips:\n- Don't overwork the meat to keep patties tender\n- Let patties rest 5 minutes before serving\n- For smash burgers: Press thin patties on hot griddle\n- Alternative toppings: Bacon, avocado, sautéed mushrooms\n- For juicier burgers: Add 1 tbsp cold butter to meat mixture"
     ],
-    "instructions": "Mix chicken with spices, fry, then cook in Manchurian sauce.",
-    "preparationTime": "30 minutes",
-    "likeCount": 120
+    "authorName": "Chef Michael Smith"
   },
   {
-    "title": "Chow Mein",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLHWuQ7G4IK-wgyW-0ridvE4dGnCFLFZuf2w&s",
-    "categories": ["Main Course"],
-    "cuisineType": "Chinese",
-    "ingredients": [
-      "Noodles",
-      "Vegetables",
-      "Soy Sauce",
-      "Garlic"
+ 
+    "title": "Creamy Mushroom Pasta",
+    "coverImage": "https://assets.bonappetit.com/photos/5d4ddd602c815a00080f9771/3:2/w_3131,h_2087,c_limit/BA-0919-Creamy-Pasta-Crispy-Mushroom-Playbook.jpg",
+    "content": [
+      "Rich and comforting pasta with wild mushrooms in garlic cream sauce. Serves 4 (Prep: 15 mins, Cook: 20 mins).",
+
+      "Ingredients:\n- 400g fettuccine\n- 500g mixed mushrooms\n- 3 garlic cloves\n- 1 shallot\n- 200ml heavy cream\n- 50g parmesan\n- 2 tbsp butter\n- 2 tbsp olive oil\n- 1 tsp thyme\n- Salt & pepper\n- Parsley for garnish",
+
+      "Instructions:\n1. Cook pasta al dente, reserve 1 cup pasta water.\n2. Slice mushrooms, mince garlic and shallot.\n3. Heat oil/butter, sauté shallot 2 minutes.\n4. Add mushrooms, cook until browned (8-10 mins).\n5. Add garlic, thyme, salt & pepper, cook 1 minute.\n6. Pour in cream, simmer until slightly thickened.\n7. Add cooked pasta, toss to coat.\n8. Stir in parmesan, adding pasta water as needed.\n9. Garnish with parsley and extra parmesan.",
+
+      "Tips:\n- Use variety of mushrooms for depth of flavor\n- Substitute cream with evaporated milk for lighter version\n- Add splash of white wine with cream for complexity\n- For vegan version: Use coconut milk and nutritional yeast\n- Finish with truffle oil for luxury touch"
     ],
-    "instructions": "Boil noodles, stir-fry with vegetables and sauces.",
-    "preparationTime": "20 minutes",
-    "likeCount": 85
+    "authorName": "Chef Giada De Laurentiis"
   },
   {
-    "title": "Egg Fried Rice",
-    "image": "https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2020/02/Egg-Fried-Rice-2.jpg?fit=1300%2C867&ssl=1",
-    "categories": ["Main Course"],
-    "cuisineType": "Chinese",
-    "ingredients": [
-      "Rice",
-      "Egg",
-      "Vegetables",
-      "Soy Sauce",
-      "Spring Onion"
+   
+    "title": "Chocolate Lava Cake",
+    "coverImage": "https://preppykitchen.com/wp-content/uploads/2022/03/Chocolate-Lava-Cake-Recipe.jpg",
+    "content": [
+      "Decadent individual chocolate cakes with molten centers. Makes 6 (Prep: 20 mins, Cook: 12 mins).",
+
+      "Ingredients:\n- 170g dark chocolate\n- 170g butter\n- 3 eggs\n- 3 egg yolks\n- 150g powdered sugar\n- 60g flour\n- 1 tsp vanilla extract\n- Pinch salt\n- Cocoa powder for dusting",
+
+      "Instructions:\n1. Preheat oven to 220°C (425°F).\n2. Butter and cocoa-dust 6 ramekins.\n3. Melt chocolate and butter over double boiler.\n4. Whisk eggs, yolks, sugar and vanilla until pale.\n5. Fold in melted chocolate, then flour and salt.\n6. Divide batter among ramekins.\n7. Bake 10-12 minutes until edges set but centers soft.\n8. Let sit 1 minute, then invert onto plates.",
+
+      "Tips:\n- Use high-quality chocolate (70% cocoa)\n- Can be prepared ahead and refrigerated\n- Serve immediately with ice cream\n- For coffee flavor: Add 1 tsp instant espresso\n- Baking time crucial - test at 10 minutes"
     ],
-    "instructions": "Stir-fry rice with scrambled eggs, veggies, and sauces.",
-    "preparationTime": "25 minutes",
-    "likeCount": 150
+    "authorName": "Pastry Chef Dominique Ansel"
   },
   {
-    "title": "Sweet and Sour Chicken",
-    "image": "https://mymorningmocha.com/wp-content/uploads/2023/08/Sweet-And-Sour-Chicken-Recipe.jpg",
-    "categories": ["Main Course"],
-    "cuisineType": "Chinese",
-    "ingredients": [
-      "Chicken",
-      "Capsicum",
-      "Pineapple",
-      "Sweet-Sour Sauce"
+    
+    "title": "Chicken Tikka Masala",
+    "coverImage": "https://c.ndtvimg.com/2022-07/33meqsb_chicken-tikka_625x300_08_July_22.png",
+    "content": [
+      "Creamy spiced chicken in tomato-based curry. Serves 6 (Prep: 30 mins + marinate, Cook: 30 mins).",
+
+      "Ingredients (Marinade):\n- 1kg chicken thighs\n- 1 cup yogurt\n- 2 tbsp lemon juice\n- 2 tbsp ginger-garlic paste\n- 2 tsp garam masala\n- 1 tsp turmeric\n- 1 tsp cumin\n- 1 tsp chili powder\n\nIngredients (Sauce):\n- 2 tbsp ghee\n- 1 onion\n- 400g tomato puree\n- 1 cup cream\n- 1 tbsp kasuri methi\n- 1 tsp sugar\n- Salt to taste\n- Coriander for garnish",
+
+      "Instructions:\n1. Mix marinade ingredients, coat chicken, refrigerate 2+ hours.\n2. Grill/broil chicken until lightly charred.\n3. For sauce: Cook onions in ghee until golden.\n4. Add tomato puree, cook 5 minutes.\n5. Add cream, spices, sugar and salt.\n6. Simmer 10 minutes, add grilled chicken.\n7. Cook 5 more minutes, garnish with kasuri methi and coriander.",
+
+      "Tips:\n- Skewer chicken for authentic tikka preparation\n- Adjust cream for desired richness\n- For smokiness: Use charcoal grill or add liquid smoke\n- Substitute coconut milk for dairy-free version\n- Serve with naan and basmati rice"
     ],
-    "instructions": "Fry chicken, mix with vegetables and sweet-sour sauce.",
-    "preparationTime": "35 minutes",
-    "likeCount": 110
+    "authorName": "Chef Sanjeev Kapoor"
   },
   {
-    "title": "Hakka Noodles",
-    "image": "https://vegecravings.com/wp-content/uploads/2017/03/veg-hakka-noodles-recipe-with-step-by-step-instructions.jpg",
-    "categories": ["Main Course"],
-    "cuisineType": "Chinese",
-    "ingredients": [
-      "Noodles",
-      "Carrot",
-      "Cabbage",
-      "Bell Pepper",
-      "Soy Sauce"
+    
+    "title": "Greek Salad",
+    "coverImage": "https://www.giallozafferano.com/images/277-27764/Greek-Salad_1200x800.jpg",
+    "content": [
+      "Fresh and vibrant Mediterranean salad. Serves 4 (Prep: 15 mins).",
+
+      "Ingredients:\n- 1 cucumber\n- 4 tomatoes\n- 1 red onion\n- 1 green bell pepper\n- 200g feta cheese\n- Kalamata olives\n- 2 tbsp olive oil\n- 1 tbsp red wine vinegar\n- 1 tsp dried oregano\n- Salt & pepper",
+
+      "Instructions:\n1. Chop cucumber, tomatoes, pepper into large chunks.\n2. Thinly slice red onion.\n3. Combine vegetables in large bowl.\n4. Add olives and cubed feta.\n5. Whisk together oil, vinegar, oregano, salt & pepper.\n6. Pour dressing over salad, toss gently.\n7. Serve immediately or chill 30 minutes.",
+
+      "Tips:\n- Use ripe, in-season vegetables\n- Authentic Greek feta makes difference\n- Add capers for extra brininess\n- For protein: Add grilled chicken or shrimp\n- Drizzle with extra virgin olive oil before serving"
     ],
-    "instructions": "Boil noodles, stir-fry with veggies and sauces.",
-    "preparationTime": "20 minutes",
-    "likeCount": 98
+    "authorName": "Chef Yotam Ottolenghi"
   },
   {
-    "title": "Chicken Lollipop",
-    "image": "https://www.cafegoldenfeast.com/wp-content/uploads/2025/01/Chicken-Lollipop.jpg",
-    "categories": ["Appetizer"],
-    "cuisineType": "Chinese",
-    "ingredients": [
-      "Chicken Wings",
-      "Garlic",
-      "Ginger",
-      "Spices",
-      "Cornflour"
+    
+    "title": "Beef Pho",
+    "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRI737Vz12cCnMz0-caJf5tGIewKceyIc8w&s",
+    "content": [
+      "Vietnamese noodle soup with aromatic broth. Serves 6 (Prep: 45 mins, Cook: 3 hours).",
+
+      "Ingredients (Broth):\n- 1kg beef bones\n- 500g brisket\n- 1 onion\n- 4-inch ginger\n- 3 star anise\n- 1 cinnamon stick\n- 3 cloves\n- 1 cardamom pod\n- 1 tbsp coriander seeds\n- 2 tbsp fish sauce\n- 1 tbsp sugar\n- Salt to taste\n\nIngredients (Bowls):\n- 400g rice noodles\n- 300g sirloin (thinly sliced)\n- Bean sprouts\n- Thai basil\n- Lime wedges\n- Chili slices\n- Hoisin & sriracha",
+
+      "Instructions:\n1. Char onion and ginger under broiler.\n2. Blanch bones, then rinse.\n3. Simmer bones, brisket, spices 3 hours.\n4. Remove brisket, slice thin.\n5. Strain broth, season with fish sauce/sugar.\n6. Cook noodles, assemble bowls with raw beef slices.\n7. Pour hot broth over to cook beef.\n8. Serve with herbs and condiments.",
+
+      "Tips:\n- Skim broth frequently for clarity\n- Freeze extra broth for quick meals\n- Slice meat paper-thin while partially frozen\n- Toast spices for enhanced aroma\n- Customize with preferred herbs and sauces"
     ],
-    "instructions": "Marinate wings, deep fry until crispy.",
-    "preparationTime": "40 minutes",
-    "likeCount": 200
+    "authorName": "Chef Andrea Nguyen"
   },
   {
-    "title": "Hot and Sour Soup",
-    "image": "https://cicili.tv/wp-content/uploads/2024/10/Seafood-Hot-and-Sour-Soup-Small-4-1200x675.jpg",
-    "categories": ["Soup"],
-    "cuisineType": "Chinese",
-    "ingredients": [
-      "Chicken",
-      "Mushroom",
-      "Carrot",
-      "Vinegar",
-      "Soy Sauce"
+  
+    "title": "Sourdough Bread",
+    "coverImage": "https://www.allrecipes.com/thmb/GPqr9kEn84Kj00QL56aObbv1ci0=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/260540-Chef-Johns-Sourdough-Bread-DDMFS-004-4x3-6791a75a5d804ec28424d04756054c5b.jpg",
+    "content": [
+      "Artisan sourdough with crisp crust and open crumb. Makes 1 loaf (Prep: 24 hrs, Cook: 45 mins).",
+
+      "Ingredients:\n- 500g bread flour\n- 100g active starter\n- 10g salt\n- 350g water\n\nEquipment:\n- Dutch oven\n- Banneton\n- Lame/razor",
+
+      "Instructions:\n1. Mix flour and water, autolyse 1 hour.\n2. Add starter and salt, mix thoroughly.\n3. Bulk ferment 4-6 hours with stretch/folds.\n4. Pre-shape, rest 30 minutes.\n5. Final shape, place in floured banneton.\n6. Cold proof 12-18 hours in refrigerator.\n7. Preheat Dutch oven at 250°C (480°F) 1 hour.\n8. Score dough, bake covered 20 minutes.\n9. Uncover, bake 25 more minutes until deep brown.",
+
+      "Tips:\n- Maintain starter at consistent feeding schedule\n- Dough temperature affects fermentation time\n- Steam creates better oven spring\n- Let cool completely before slicing\n- Experiment with different flour blends"
     ],
-    "instructions": "Cook chicken and vegetables in spicy sour broth.",
-    "preparationTime": "30 minutes",
-    "likeCount": 135
+    "authorName": "Baker Chad Robertson"
   },
   {
-    "title": "Schezwan Fried Rice",
-    "image": "https://www.veganricha.com/wp-content/uploads/2023/09/Schezwan-Rice-0955.jpg",
-    "categories": ["Main Course"],
-    "cuisineType": "Chinese",
-    "ingredients": [
-      "Rice",
-      "Schezwan Sauce",
-      "Vegetables",
-      "Egg"
+
+    "title": "Margherita Pizza",
+    "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjxKRzb98k-hNThaEfqVkSxXpCGPyGoGeE8A&s",
+    "content": [
+      "Classic Neapolitan-style pizza with simple toppings. Makes 2 pizzas (Prep: 2 hrs, Cook: 90 secs).",
+
+      "Ingredients (Dough):\n- 500g 00 flour\n- 325ml water\n- 10g salt\n- 1g fresh yeast\n\nIngredients (Topping):\n- 200g San Marzano tomatoes\n- 200g fresh mozzarella\n- Fresh basil\n- Olive oil\n- Salt",
+
+      "Instructions:\n1. Mix dough ingredients, knead 10 minutes.\n2. Bulk ferment 2 hours at room temperature.\n3. Divide into 2 balls, proof 6-8 hours.\n4. Preheat oven/stone to maximum (500°F+).\n5. Hand-stretch dough to thin rounds.\n6. Crush tomatoes, spread on dough.\n7. Add torn mozzarella and salt.\n8. Bake until crust blisters (60-90 seconds).\n9. Garnish with basil and olive oil.",
+
+      "Tips:\n- Use wood-fired oven for authentic results\n- High hydration (65%) for better crust\n- Don't overload with toppings\n- Fresh, high-quality ingredients essential\n- Let dough rest if resistant to stretching"
     ],
-    "instructions": "Stir-fry rice with Schezwan sauce and vegetables.",
-    "preparationTime": "25 minutes",
-    "likeCount": 160
+    "authorName": "Pizzaiolo Enzo Coccia"
   },
   {
-    "title": "Paneer Chilli",
-    "image": "https://www.yummytummyaarthi.com/wp-content/uploads/2023/06/chilli-paneer-1.jpeg",
-    "categories": ["Appetizer"],
-    "cuisineType": "Chinese",
-    "ingredients": [
-      "Paneer",
-      "Capsicum",
-      "Onion",
-      "Soy Sauce"
+    
+    "title": "Eggs Benedict",
+    "coverImage": "https://www.foodandwine.com/thmb/j6Ak6jECu0fdly1XFHsp4zZM8gQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Eggs-Benedict-FT-RECIPE0123-4f5f2f2544464dc89a667b5d960603b4.jpg",
+    "content": [
+      "Classic brunch dish with poached eggs and hollandaise. Serves 2 (Prep: 20 mins, Cook: 10 mins).",
+
+      "Ingredients:\n- 2 English muffins\n- 4 eggs\n- 4 slices Canadian bacon\n- 1 tbsp vinegar\n- 100g butter\n- 1 egg yolk\n- 1 tbsp lemon juice\n- Cayenne pepper\n- Salt\n- Chives for garnish",
+
+      "Instructions:\n1. For hollandaise: Whisk yolk and lemon juice over double boiler.\n2. Slowly drizzle in melted butter until emulsified.\n3. Season with salt and cayenne, keep warm.\n4. Poach eggs in simmering water with vinegar.\n5. Toast muffins, warm bacon.\n6. Assemble: muffin half, bacon, poached egg.\n7. Spoon hollandaise over, garnish with chives.",
+
+      "Tips:\n- Fresh eggs poach better\n- Maintain water at gentle simmer\n- For stability: Blend hollandaise with immersion blender\n- Variations: Substitute smoked salmon or spinach\n- Serve immediately to prevent sogginess"
     ],
-    "instructions": "Fry paneer, toss with sauces and vegetables.",
-    "preparationTime": "20 minutes",
-    "likeCount": 145
+    "authorName": "Chef Julia Child"
   },
   {
-    "title": "Spring Roll",
-    "image": "https://static01.nyt.com/images/2023/12/21/multimedia/AS-Spring-Rolls-bzjt/AS-Spring-Rolls-bzjt-threeByTwoMediumAt2X.jpg",
-    "categories": ["Appetizer"],
-    "cuisineType": "Chinese",
-    "ingredients": [
-      "Spring Roll Sheets",
-      "Vegetables",
-      "Noodles",
-      "Spices"
+   
+    "title": "Thai Green Curry",
+    "coverImage": "https://piquantpost.com/cdn/shop/articles/GJ16a1y2HDD3gYjmojg2t_1200x1200.jpg?v=1646021297",
+    "content": [
+      "Fragrant coconut curry with vegetables and protein. Serves 4 (Prep: 20 mins, Cook: 20 mins).",
+
+      "Ingredients (Paste):\n- 2 green chilies\n- 1 lemongrass stalk\n- 3 garlic cloves\n- 1 shallot\n- 1-inch galangal\n- 1 tsp coriander roots\n- 1 tsp cumin\n- 1 tsp shrimp paste\n- Lime zest\n\nIngredients (Curry):\n- 400ml coconut milk\n- 500g protein (chicken/tofu)\n- 1 eggplant\n- 1 bell pepper\n- 10 Thai basil leaves\n- 1 tbsp fish sauce\n- 1 tsp palm sugar\n- 2 kaffir lime leaves",
+
+      "Instructions:\n1. Blend all paste ingredients until smooth.\n2. Heat 1/4 cup coconut milk, fry paste 2 minutes.\n3. Add protein, cook until surface sealed.\n4. Add remaining coconut milk and vegetables.\n5. Simmer 10 minutes until cooked through.\n6. Season with fish sauce and sugar.\n7. Add basil and lime leaves before serving.",
+
+      "Tips:\n- Fresh ingredients make best paste\n- Adjust chili quantity for heat preference\n- Don't boil coconut milk to prevent splitting\n- Traditional accompaniment: Jasmine rice\n- For vegetarian: Substitute fish sauce with soy sauce"
     ],
-    "instructions": "Stuff rolls, deep fry until crispy golden.",
-    "preparationTime": "30 minutes",
-    "likeCount": 130
+    "authorName": "Chef David Thompson"
   }
 ]
