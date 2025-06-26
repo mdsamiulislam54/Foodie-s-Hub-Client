@@ -47,7 +47,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/all-recipe",
-        loader: () => fetch("http://localhost:5000/all-recipe"),
+       
         element:<PrivateRouter>
           <AllRecipes/>
         </PrivateRouter>

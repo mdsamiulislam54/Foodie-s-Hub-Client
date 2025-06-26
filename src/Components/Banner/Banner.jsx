@@ -52,7 +52,7 @@ const Banner = () => {
         "Browse popular recipes liked by thousands. Create your own wishlist and discover what’s trending in the food community.",
       button1: "See Top Recipes",
       button2: "Add Recipe",
-      video: "https://cdn.pixabay.com/video/2023/03/07/153727-806178024_large.mp4"
+      video: "https://cdn.pixabay.com/video/2015/08/08/146-135737323_large.mp4"
     }
   ];
 
@@ -62,7 +62,7 @@ const Banner = () => {
         spaceBetween={-5}
         
         loop
-        autoplay={{ delay: 7000, disableOnInteraction: false }}
+        autoplay={{ delay: 10000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper w-full"

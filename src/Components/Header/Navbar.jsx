@@ -12,7 +12,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const Navbar = () => {
   const [theme, setTheme] = useState("");
   const [scrollY, setScrollY] = useState(0);
-  const [isShowMobileMenu, setShowMobileMenu] = useState(true);
+  const [isShowMobileMenu, setShowMobileMenu] = useState(false);
 
   const location = useLocation();
 
@@ -104,7 +104,7 @@ const Navbar = () => {
           </span>
           <div className="flex items-center gap-4  max-lg:hidden  ">
             <div
-              className="tooltip tooltip-bottom"
+              className="tooltip tooltip-bottom mx-4"
               data-tip={user?.displayName}
             >
               {user ? (
