@@ -4,7 +4,7 @@ import { UserContext } from "../../ContextApi/userContext";
 
 const PrivateRouter = ({ children }) => {
   const { pathname } = useLocation();
-  console.log(pathname);
+
   const { user, loading } = use(UserContext);
 
   if (loading) {

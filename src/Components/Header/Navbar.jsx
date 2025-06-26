@@ -1,22 +1,21 @@
-import React, { use, useEffect, useRef, useState } from "react";
-import { Link } from "react-router";
+import React, { useContext, useEffect, useState } from "react";
+import { Link, useLocation } from "react-router";
 
 import "./style.css";
 import { IoSunny, IoSunnyOutline } from "react-icons/io5";
 import { FaBars, FaClipboardList, FaTimes } from "react-icons/fa";
 
-import gsap from "gsap";
 import { Typewriter, useTypewriter } from "react-simple-typewriter";
 import { UserContext } from "../../ContextApi/userContext";
 import Swal from "sweetalert2";
 
 const Navbar = () => {
   const [theme, setTheme] = useState("");
-    const [scrollY, setScrollY] = useState(0);
-  const menuRef = useRef();
-  const tl = useRef(gsap.timeline({ paused: true }));
+  const [scrollY, setScrollY] = useState(0);
 
-  const {user,logOut} = use(UserContext)
+  const location = useLocation();
+
+  const { user, logOut } = useContext(UserContext);
 
   useEffect(() => {
     const savedThems = localStorage.getItem("theme") || "light";
@@ -30,30 +29,6 @@ const Navbar = () => {
     document.documentElement.setAttribute("data-theme", newTheme);
   };
 
-  useEffect(() => {
-    tl.current.to(menuRef.current, {
-      right: 0,
-      duration: 0.8,
-    });
-  }, []);
-  const handleMenu = () => {
-    tl.current.play();
-  };
-  const handleMenuColse = () => {
-    tl.current.reverse();
-  };
-  const [text] = useTypewriter({
-    words: [
-      "Search Recipes...",
-      "Find Your Favorite Dish...",
-      "Explore New Tastes...",
-    ],
-    loop: 0, // infinite loop
-    typeSpeed: 100,
-    deleteSpeed: 50,
-    delaySpeed: 2000,
-  });
-  
   const handleLogOut = () => {
     logOut()
       .then(() => {
@@ -62,10 +37,9 @@ const Navbar = () => {
           text: "You have been logged out.",
           icon: "success",
           confirmButtonColor: "#ffd40d",
-        })
+        });
       })
       .catch(() => {
-      
         Swal.fire({
           title: "Logout Failed!",
           text: "An error occurred while logging out.",
@@ -73,9 +47,9 @@ const Navbar = () => {
           confirmButtonColor: "#f3274c",
         });
       });
-  }
+  };
 
-    useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
@@ -86,23 +60,37 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
- 
+  const isHome = location.pathname === "/";
 
   return (
-    <nav className={`
-      ${scrollY > 50 ? "fixed-nav  shadow-lg bg-gradient-to-br from-primary to-base-100" : "border-b border-gray-600 absolute top-0 left-0 w-full z-10 transition-all duration-500  text-white  "}
-    `} >
+    <nav
+      className={`
+       ${
+         isHome
+           ? scrollY > 50
+             ? "fixed-nav  shadow-lg bg-gradient-to-br from-primary to-base-100"
+             : "border-b border-gray-600 absolute top-0 left-0 w-full z-10 transition-all duration-500  text-white"
+           : ` ${scrollY > 50 ? "fixed-nav shadow-lg bg-gradient-to-br from-primary to-base-100" : "bg-base-100 shadow-md"}`
+       }
+      
+    `}
+    >
       <div className="w-10/12 mx-auto">
         <div className="flex items-center justify-between py-3">
           <span className="flex items-center">
-            <Link to={'/'} className="xl:text-3xl text-xl font-fredoka font-bold">
+            <Link
+              to={"/"}
+              className="xl:text-3xl text-xl font-fredoka font-bold"
+            >
               Foodie's
-              <span className="bg-primary px-1 rounded-md text-black"> Hub</span>
+              <span className="bg-primary px-1 rounded-md text-black">
+                {" "}
+                Hub
+              </span>
             </Link>
             <input
               type="text"
-              placeholder={text}
+              placeholder="Find Your Favorite Dish..."
               className=" border xl:w-[500px] lg:w-[400px] ml-40 xl:p-2.5 p-2 rounded-tl-md rounded-bl-md border-primary max-lg:hidden "
             />
             <button className=" xl:py-[11px] py-[10px] px-4 bg-primary  max-lg:hidden rounded-tr-md rounded-br-md text-black  hover:bg-primary/80 cursor-pointer transition-all duration-300">
@@ -110,30 +98,43 @@ const Navbar = () => {
             </button>
           </span>
           <div className="flex items-center gap-4  max-lg:hidden  ">
-            <div className="tooltip tooltip-bottom" data-tip={user?.displayName}>
-              {
-                user ?   <img
-                src={user?.photoURL}
-                alt="user"
-                className="w-8 rounded-full"
-              />:<img src="https://i.postimg.cc/br5XckZ4/banner-1.png" alt="user" className="w-8 rounded-full" />
-              }
-            
-              
+            <div
+              className="tooltip tooltip-bottom"
+              data-tip={user?.displayName}
+            >
+              {user ? (
+                <img
+                  src={user?.photoURL}
+                  alt="user"
+                  className="w-8 rounded-full"
+                />
+              ) : (
+                <img
+                  src="https://i.postimg.cc/br5XckZ4/banner-1.png"
+                  alt="user"
+                  className="w-8 rounded-full"
+                />
+              )}
             </div>
 
-            {
-              user ?  <Link onClick={handleLogOut} className="btn px-5 text-lg font-fredoka tracking-wide bg-primary rounded-md text-black  hover:bg-primary/80 cursor-pointer transition-all duration-300">
-              logout
-            </Link> :  <Link to={'/login'} className="btn px-5 text-lg font-fredoka tracking-wide bg-primary rounded-md text-black  hover:bg-primary/80 cursor-pointer transition-all duration-300">
-              login
-            </Link>
-            }
-          
-           
+            {user ? (
+              <Link
+                onClick={handleLogOut}
+                className="btn px-5 text-lg font-fredoka tracking-wide bg-primary rounded-md text-black  hover:bg-primary/80 cursor-pointer transition-all duration-300"
+              >
+                logout
+              </Link>
+            ) : (
+              <Link
+                to={"/login"}
+                className="btn px-5 text-lg font-fredoka tracking-wide bg-primary rounded-md text-black  hover:bg-primary/80 cursor-pointer transition-all duration-300"
+              >
+                login
+              </Link>
+            )}
           </div>
           {/* Mobile Menu Toggle */}
-          <div className="lg:hidden cursor-pointer" onClick={handleMenu}>
+          <div className="lg:hidden cursor-pointer">
             <FaBars size={28} />
           </div>
         </div>
@@ -177,20 +178,16 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
 
-        <div
-          ref={menuRef}
-          className="absolute w-[70%] top-0 right-[-9999px] h-screen bg-base-100 shadow-2xl p-10"
-        >
+        <div className="absolute w-[70%] top-0 right-[-9999px] h-screen bg-base-100 shadow-2xl p-10">
           <div className="flex justify-between items-center mb-6">
-             <h2 className="text-3xl font-fredoka font-bold">
+            <h2 className="text-3xl font-fredoka font-bold">
               Foodie's
-              <span className="bg-primary px-1 rounded-md text-black"> Hub</span>
+              <span className="bg-primary px-1 rounded-md text-black">
+                {" "}
+                Hub
+              </span>
             </h2>
-            <FaTimes
-              size={28}
-              onClick={handleMenuColse}
-              className="cursor-pointer"
-            />
+            <FaTimes size={28} className="cursor-pointer" />
           </div>
 
           <div className="flex">

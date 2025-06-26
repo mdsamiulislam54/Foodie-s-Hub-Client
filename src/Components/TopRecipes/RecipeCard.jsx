@@ -6,11 +6,11 @@ const RecipeCard = ({ recipe }) => {
 
   return (
     <div className=" rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 border-1 
-      border-dotted border-primary">
+      border-dotted border-primary p-2">
       <img
         src={image}
         alt={title}
-        className="w-50 h-50 object-contain mx-auto"
+        className="w-60 h-50 rounded-2xl object-cover mx-auto mix-blend-multiply"
       />
       <div className="p-4 space-y-2">
         <h2 className="text-xl font-semibold  border-t-2 pt-2 border-dotted">{title}</h2>
