@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import './Style/style.css'
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./Layout/Layout.jsx";
@@ -13,6 +14,7 @@ import PrivateRouter from "./Components/PrivateRoute/PrivateRouter.jsx";
 import MyRecipes from "./Components/MyRecipes/MyRecipes.jsx";
 import AllRecipes from "./Components/AllRecipes/AllRecipes.jsx";
 import Details from "./Components/DetailsRecipes/Details.jsx";
+import PlanLayout from "./Layout/PlanLayout.jsx";
 
 const router = createBrowserRouter([
   {
@@ -58,12 +60,19 @@ const router = createBrowserRouter([
         </PrivateRouter>
       },
 
+    ],
+  },
+  {
+    path:'/',
+    Component: PlanLayout,
+    children: [
+    
       {
         path: "*",
         Component: PageNotFound,
-      },
-    ],
-  },
+      }
+    ]
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(

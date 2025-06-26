@@ -16,7 +16,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="lg:min-h-screen flex items-center justify-center  lg:py-12">
+    <div className="lg:min-h-screen flex items-center justify-center  lg:py-20">
       <div className="w-11/12 max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <h3 className="text-sm text-primary font-semibold uppercase tracking-wide">

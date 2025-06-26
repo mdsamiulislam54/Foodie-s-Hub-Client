@@ -12,6 +12,7 @@ import Swal from "sweetalert2";
 
 const Navbar = () => {
   const [theme, setTheme] = useState("");
+    const [scrollY, setScrollY] = useState(0);
   const menuRef = useRef();
   const tl = useRef(gsap.timeline({ paused: true }));
 
@@ -74,12 +75,26 @@ const Navbar = () => {
       });
   }
 
+    useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
  
 
   return (
-    <nav className=" shadow-sm sticky top-0 left-0 w-full z-10 transition-all duration-500 bg-base-100 " >
+    <nav className={`
+      ${scrollY > 50 ? "fixed-nav  shadow-lg bg-gradient-to-br from-primary to-base-100" : "border-b border-gray-600 absolute top-0 left-0 w-full z-10 transition-all duration-500  text-white  "}
+    `} >
       <div className="w-10/12 mx-auto">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-3">
           <span className="flex items-center">
             <Link to={'/'} className="xl:text-3xl text-xl font-fredoka font-bold">
               Foodie's
@@ -124,20 +139,23 @@ const Navbar = () => {
         </div>
         <div className="w-full flex justify-between items-center py-4 max-lg:hidden ">
           <div className="space-x-10">
-            <Link to={"/"} className="lg:text-lg  font-bold item">
+            <Link to={"/"} className="lg:text-md  font-bold item">
               Home
             </Link>
-            <Link to={"/all-recipe"} className="lg:text-lg  font-bold item">
+            <Link to={"/all-recipe"} className="lg:text-md  font-bold item">
               All Recipes
             </Link>
-            <Link to={"/add-recipe"} className="lg:text-lg  font-bold item">
+            <Link to={"/add-recipe"} className="lg:text-md  font-bold item">
               Add Recipe
             </Link>
-            <Link to={"/my-recipes"} className="lg:text-lg  font-bold item">
+            <Link to={"/my-recipes"} className="lg:text-md  font-bold item">
               My Recipes
             </Link>
-            <Link to={"/*"} className="lg:text-lg  font-bold item">
+            <Link to={"/*"} className="lg:text-md  font-bold item">
               All Blog
+            </Link>
+            <Link to={"/*"} className="lg:text-md  font-bold item">
+              Dashboard
             </Link>
           </div>
           <div className="flex gap-5 items-center">
