@@ -54,7 +54,7 @@ const AllRecipes = () => {
             </select>
           </fieldset>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-20">
           {filteredRecipes.map((recipe) => (
             <RecipesCard key={recipe._id} recipe={recipe}></RecipesCard>
           ))}

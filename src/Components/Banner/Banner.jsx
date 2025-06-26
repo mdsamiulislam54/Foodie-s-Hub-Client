@@ -59,7 +59,7 @@ const Banner = () => {
   return (
     <div className="min-h-screen lg:mb-10 ">
       <Swiper
-        spaceBetween={-40}
+        spaceBetween={-5}
         
         loop
         autoplay={{ delay: 7000, disableOnInteraction: false }}
