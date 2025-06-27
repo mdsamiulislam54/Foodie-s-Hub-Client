@@ -1,7 +1,6 @@
-# 🍳 Recipe Book App
+# 🍔 Foodie Hub 🍽️
 
-A user-friendly Recipe Book web application where users can manage their own recipes, discover recipes from others, add recipes to a wishlist, like recipes, and see top-rated dishes based on likes. This is a single-page, responsive, modern React project with Firebase authentication and MongoDB database integration.
-
+**Foodie Hub** is a full-stack recipe management and sharing platform where users can add, update, delete, and browse recipes. It features a dynamic dashboard with real-time data visualizations via **Recharts**, user-specific recipe management, and secure authentication using **Firebase**.
 ## 🔗 Live Site  
 👉 [Live Website Link](https://foods-hub-11.netlify.app/)
 
@@ -9,18 +8,17 @@ A user-friendly Recipe Book web application where users can manage their own rec
 
 ## 🚀 Features
 
-- 🔐 **Firebase Authentication** (Email/Password & Google login)
-- 📋 **Add, Update & Delete recipes** (only by logged-in users)
-- ❤️ **Like feature** with restriction (users can't like their own recipe)
-- 🌍 **Filter recipes** by cuisine type (Italian, Mexican, Indian, Chinese, Others)
-- 📊 **Top recipes** section based on highest likes
-- 🎨 **Dark/Light theme toggle**
-- 📱 **Fully responsive design** for mobile, tablet, and desktop
-- 🍽️ **Recipe details page** with full information and like count
-- 🎉 Integrated **SweetAlert2** and **React Toast** for better user feedback
-- 🎬 Beautiful animations with **GSAP**, **Swiper**, **React Simple Typewriter**, **React Tooltip**, and **React Awesome Reveal**
-- ⚙️ Protected private routes for Add Recipe, My Recipes, and Recipe Details
-- 📝 Custom 404 Not Found page with food theme
+- ✅ User Authentication (Firebase)
+- ✅ Create / Read / Update / Delete (CRUD) for recipes
+- ✅ Dynamic Dashboard with real-time analytics
+- ✅ My Recipes: Filter and manage recipes by logged-in user
+- ✅ All Recipes: Browse all recipes with server-side pagination
+- ✅ Add New Recipe from the dashboard with form validation
+- ✅ SweetAlert2 for confirmation dialogs and alerts
+- ✅ Fully responsive design (Tailwind CSS)
+- ✅ Server-side Pagination, Filtering, Sorting (MongoDB)
+- ✅ Smooth UI Animations (Framer Motion)
+- ✅ Protected Private Routes (React Router)
 
 ---
 
@@ -41,6 +39,8 @@ A user-friendly Recipe Book web application where users can manage their own rec
 - React Awesome Reveal
 - Vite
 - Axios
+- Recharts (data visualization)
+- Framer Motion
 
 **Backend:**
 
@@ -52,6 +52,15 @@ A user-friendly Recipe Book web application where users can manage their own rec
 - Mongoose
 
 ---
+##  Installation
+
+- git clone 
+- cd food-rcipe-app-clinet
+- npm install
+- npm run dev
+##  Create .env file in the Server Directory
+
+- DB_URL =mongodb+srv://userName:password@cluster0.jrbpay1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
 ## 📁 Environment Variables
 

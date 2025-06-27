@@ -27,7 +27,7 @@ const Overview = () => {
 
   useEffect(() => {
     fetchRecipes(0, 0);
-  }, [fetchRecipes]);
+  }, []);
 
 
   return (

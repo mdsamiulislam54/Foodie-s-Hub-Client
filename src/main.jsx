@@ -5,7 +5,7 @@ import "./Style/style.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./Layout/Layout.jsx";
-import AddRecipe from "./Components/AddRecipes/AddRecipe.jsx";
+
 import PageNotFound from "./Components/PageNotFound/PageNotFound.jsx";
 import Login from "./Components/Authentication/Login.jsx";
 import Registration from "./Components/Authentication/Registration.jsx";
@@ -37,14 +37,7 @@ const router = createBrowserRouter([
         index: true,
         Component: App,
       },
-      {
-        path: "/add-recipe",
-        element: (
-          <PrivateRouter>
-            <AddRecipe />
-          </PrivateRouter>
-        ),
-      },
+    
       {
         path: "login",
         Component: Login,
@@ -69,7 +62,7 @@ const router = createBrowserRouter([
       {
         path: "/details/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/details/${params.id}`),
+          fetch(`https://food-recipe-app-server-lac.vercel.app/details/${params.id}`),
         element: (
           <PrivateRouter>
             <Details />
@@ -87,7 +80,7 @@ const router = createBrowserRouter([
       {
         path: "blog-details/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/blog-details/${params.id}`),
+          fetch(`https://food-recipe-app-server-lac.vercel.app/blog-details/${params.id}`),
         element: <BlogDetails />,
       },
       {

@@ -13,7 +13,7 @@ const MyRecipes = () => {
 
   // fetch my recipes
   const fetchMyRecipes = async () => {
-    const res = await fetch(`http://localhost:5000/recipe/${user.uid}`);
+    const res = await fetch(`https://food-recipe-app-server-lac.vercel.app/recipe/${user.uid}`);
     const data = await res.json();
     setMyRecipes(data);
   };
@@ -32,7 +32,7 @@ const MyRecipes = () => {
       confirmButtonText: "Yes, delete it!",
     }).then(async (result) => {
       if (result.isConfirmed) {
-        await fetch(`http://localhost:5000/recipe/${id}`, {
+        await fetch(`https://food-recipe-app-server-lac.vercel.app/recipe/${id}`, {
           method: "DELETE",
         });
         Swal.fire("Deleted!", "Your recipe has been deleted.", "success");
@@ -63,7 +63,7 @@ const MyRecipes = () => {
       likeCount: formData.get("likeCount"),
     };
 
-    fetch(`http://localhost:5000/recipe/${recipe._id}`, {
+    fetch(`https://food-recipe-app-server-lac.vercel.app/recipe/${recipe._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

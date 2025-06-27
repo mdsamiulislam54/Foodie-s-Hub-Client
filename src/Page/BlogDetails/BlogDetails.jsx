@@ -13,7 +13,7 @@ const BlogDetails = () => {
 
   const fetchBlogDetails = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/recipe-details/${id}`);
+      const res = await fetch(`https://food-recipe-app-server-lac.vercel.app/recipe-details/${id}`);
       if (!res.ok) throw new Error("Failed to fetch blog details");
       const data = await res.json();
       setBlog(data);

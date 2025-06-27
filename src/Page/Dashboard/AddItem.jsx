@@ -22,7 +22,7 @@ const AddItem = () => {
     console.log(recipeData);
 
     // data submit to the server
-    fetch("http://localhost:5000/recipe", {
+    fetch("https://food-recipe-app-server-lac.vercel.app/recipe", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

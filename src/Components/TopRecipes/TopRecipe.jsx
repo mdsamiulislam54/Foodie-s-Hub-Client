@@ -8,7 +8,7 @@ const TopRecipe = () => {
     useEffect(()=>{
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:5000/recipe');
+                const response = await fetch('https://food-recipe-app-server-lac.vercel.app/recipe');
                 const data = await response.json();
                 setRecipes(data);
             } catch (error) {

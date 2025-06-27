@@ -9,7 +9,7 @@ const BlogRecipe = () => {
 
   const fetchBlog = async () => {
     try {
-      const response = await fetch("http://localhost:5000/blog-recipe?limit=6");
+      const response = await fetch("https://food-recipe-app-server-lac.vercel.app/blog-recipe?limit=6");
       if (!response.ok) throw new Error("Network response was not ok");
       const data = await response.json();
       setBlog(data.blogs);

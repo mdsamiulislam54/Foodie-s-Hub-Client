@@ -24,7 +24,7 @@ const MyItems = () => {
 
   useEffect(() => {
     fetchRecipes(currentPage, itemsPerPage, user.uid);
-  }, [currentPage, fetchRecipes, itemsPerPage, user.uid]);
+  }, [currentPage, user.uid,itemsPerPage]);
 
   const chartData = recipes.map((recipe) => ({
     name: recipe.cuisineType || "Unknown",

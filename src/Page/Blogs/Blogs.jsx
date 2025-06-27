@@ -23,7 +23,7 @@ const Blogs = () => {
   const fetchBlogs = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5000/blog-recipe?page=${currentPage}&limit=${recipesPerPage}&cuisineType=${cuisineType}&searchTerm=${searchTerm}`
+        `https://food-recipe-app-server-lac.vercel.app/blog-recipe?page=${currentPage}&limit=${recipesPerPage}&cuisineType=${cuisineType}&searchTerm=${searchTerm}`
       );
       if (!res.ok) throw new Error("Failed to fetch blogs");
       const data = await res.json();

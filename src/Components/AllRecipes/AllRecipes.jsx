@@ -14,7 +14,7 @@ const AllRecipes = () => {
   const fetchRecipes = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/all-recipe?page=${currentPage}&limit=${recipesPerPage}&cuisineType=${cuisineType}`
+        `https://food-recipe-app-server-lac.vercel.app/all-recipe?page=${currentPage}&limit=${recipesPerPage}&cuisineType=${cuisineType}`
       );
       const data = await response.json();
       setRecipes(data.recipes);

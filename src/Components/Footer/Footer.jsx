@@ -32,8 +32,8 @@ const Footer = () => {
             </div>
             {/* Next 5 */}
             <div className="w-1/2 flex flex-col space-y-2">
-              <Link to="*" className="hover:underline">Blog</Link>
-              <Link to="*" className="hover:underline">FAQ</Link>
+              <Link to="/blogs" className="hover:underline">Blog</Link>
+              <Link to="/dashboard" className="hover:underline">Dashboard</Link>
               <Link to="*" className="hover:underline">Terms</Link>
               <Link to="*" className="hover:underline">Privacy</Link>
               <Link to="*" className="hover:underline">Contact</Link>

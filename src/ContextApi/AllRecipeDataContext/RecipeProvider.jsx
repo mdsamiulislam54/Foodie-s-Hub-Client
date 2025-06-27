@@ -8,7 +8,7 @@ const RecipeProvider = ({ children }) => {
 
   const fetchRecipes = async (page = 0, limit = 10, uid="") => {
     try {
-      const response = await fetch(`http://localhost:5000/all-recipe?page=${page}&limit=${limit}&uid=${uid}`);
+      const response = await fetch(`https://food-recipe-app-server-lac.vercel.app/all-recipe?page=${page}&limit=${limit}&uid=${uid}`);
       const data = await response.json();
       console.log(data);
       
