@@ -183,7 +183,7 @@ const Navbar = () => {
             <Link to={"/my-recipes"} className="lg:text-md  font-bold item">
               My Recipes
             </Link>
-            <Link to={"/*"} className="lg:text-md  font-bold item">
+            <Link to={"/blogs"} className="lg:text-md  font-bold item">
               All Blog
             </Link>
             <Link to={"/*"} className="lg:text-md  font-bold item">
@@ -260,7 +260,7 @@ const Navbar = () => {
                 <Link to="/my-recipes" className="lg:text-md  font-bold ">
                   My Recipes
                 </Link>
-                <Link to="/*" className="lg:text-md  font-bold ">
+                <Link to="/blogs" className="lg:text-md  font-bold ">
                   All Blog
                 </Link>
                 <Link to={"/*"} className="lg:text-md  font-bold ">

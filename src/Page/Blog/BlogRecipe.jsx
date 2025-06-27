@@ -12,7 +12,7 @@ const BlogRecipe = () => {
       const response = await fetch("http://localhost:5000/blog-recipe?limit=6");
       if (!response.ok) throw new Error("Network response was not ok");
       const data = await response.json();
-      setBlog(data);
+      setBlog(data.blogs);
     } catch (error) {
       setError(error.message);
     } finally {
@@ -50,10 +50,7 @@ const BlogRecipe = () => {
         </h2>
         <p className="text-gray-600 text-lg leading-relaxed">
           Discover mouth-watering recipes, expert cooking tips, and inspiring
-          stories from chefs around the world. Stay updated with the latest food
-          trends and learn how to create restaurant-quality dishes at home.
-          Explore our hand-picked articles crafted just for passionate food
-          lovers like you!
+          stories from chefs around the world.
         </p>
       </div>
       <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -106,6 +103,14 @@ const BlogRecipe = () => {
           ))}
         </div>
       </div>
+      <div className="text-center mt-12">
+        <Link
+          to="/blogs"
+          className="btn btn-primary text-black px-6 py-3 rounded-lg hover:bg-primary/80 transition-colors"
+        >
+          View All Blogs
+        </Link>
+        </div>
     </div>
   );
 };

@@ -20,6 +20,7 @@ import Wishlist from "./Page/Wishlist/Wishlist.jsx";
 import { WishlistProvider } from "./ContextApi/WishListContex/WishlistProvider.jsx";
 import BlogRecipe from "./Page/Blog/BlogRecipe.jsx";
 import BlogDetails from "./Page/BlogDetails/BlogDetails.jsx";
+import Blogs from "./Page/Blogs/Blogs.jsx";
 
 
 const router = createBrowserRouter([
@@ -70,7 +71,7 @@ const router = createBrowserRouter([
         Component:Wishlist
       },
       {
-        path:'/blogs',
+        path:'/blog',
         Component:BlogRecipe
       },
       {
@@ -78,6 +79,10 @@ const router = createBrowserRouter([
         loader: ({params}) => fetch(`http://localhost:5000/blog-details/${params.id}`),
         element:<BlogDetails/>
           
+      },
+      {
+        path:'/blogs',
+        Component:Blogs
       }
 
     ],
