@@ -103,7 +103,7 @@ const Navbar = () => {
       )}
       </AnimatePresence>
 
-      <div className="w-10/12 mx-auto overflow-x-hidden">
+      <div className="w-11/12 mx-auto overflow-x-hidden">
         <div className="flex items-center justify-between py-3">
           <div className="flex items-center">
             <Link
@@ -177,16 +177,14 @@ const Navbar = () => {
             <Link to={"/all-recipe"} className="lg:text-md  font-bold item">
               All Recipes
             </Link>
-            <Link to={"/add-recipe"} className="lg:text-md  font-bold item">
-              Add Recipe
-            </Link>
+          
             <Link to={"/my-recipes"} className="lg:text-md  font-bold item">
               My Recipes
             </Link>
             <Link to={"/blogs"} className="lg:text-md  font-bold item">
               All Blog
             </Link>
-            <Link to={"/*"} className="lg:text-md  font-bold item">
+            <Link to={"/dashboard"} className="lg:text-md  font-bold item">
               Dashboard
             </Link>
             <Link to={"/*"} className="lg:text-md  font-bold item">
@@ -254,16 +252,14 @@ const Navbar = () => {
                 <Link to="/all-recipe" className="lg:text-md  font-bold ">
                   All Recipes
                 </Link>
-                <Link to="/add-recipe" className="lg:text-md  font-bold ">
-                  Add Recipe
-                </Link>
+               
                 <Link to="/my-recipes" className="lg:text-md  font-bold ">
                   My Recipes
                 </Link>
                 <Link to="/blogs" className="lg:text-md  font-bold ">
                   All Blog
                 </Link>
-                <Link to={"/*"} className="lg:text-md  font-bold ">
+                <Link to={"/dashboard"} className="lg:text-md  font-bold ">
                   Dashboard
                 </Link>
                 <Link to={"/*"} className="lg:text-md  font-bold ">

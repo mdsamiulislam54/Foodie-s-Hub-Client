@@ -2,10 +2,8 @@ import React, { use } from "react";
 import Swal from "sweetalert2";
 import { UserContext } from "../../ContextApi/userContext";
 
-const AddRecipe = () => {
-  const {user} = use(UserContext)
-  
-
+const AddItem = () => {
+  const { user } = use(UserContext);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -34,7 +32,6 @@ const AddRecipe = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data) {
-          
           Swal.fire({
             title: "Recipe Added Successfully!",
             text: "Your recipe has been added to the collection.",
@@ -172,4 +169,4 @@ const AddRecipe = () => {
   );
 };
 
-export default AddRecipe;
+export default AddItem;

@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import './Style/style.css'
+import "./Style/style.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./Layout/Layout.jsx";
@@ -21,7 +21,12 @@ import { WishlistProvider } from "./ContextApi/WishListContex/WishlistProvider.j
 import BlogRecipe from "./Page/Blog/BlogRecipe.jsx";
 import BlogDetails from "./Page/BlogDetails/BlogDetails.jsx";
 import Blogs from "./Page/Blogs/Blogs.jsx";
-
+import Dashboard from "./Page/Dashboard/Dashboard.jsx";
+import Overview from "./Page/Dashboard/Overview.jsx";
+import AllItems from "./Page/Dashboard/AllItems.jsx";
+import MyItems from "./Page/Dashboard/MyItems.jsx";
+import AddItem from "./Page/Dashboard/AddItem.jsx";
+import RecipeProvider from "./ContextApi/AllRecipeDataContext/RecipeProvider.jsx";
 
 const router = createBrowserRouter([
   {
@@ -34,9 +39,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/add-recipe",
-        element:<PrivateRouter>
-          <AddRecipe/>
-        </PrivateRouter>
+        element: (
+          <PrivateRouter>
+            <AddRecipe />
+          </PrivateRouter>
+        ),
       },
       {
         path: "login",
@@ -47,64 +54,97 @@ const router = createBrowserRouter([
         Component: Registration,
       },
       {
-          path:'my-recipes',
-          element:<PrivateRouter>
-            <MyRecipes/>
+        path: "my-recipes",
+        element: (
+          <PrivateRouter>
+            <MyRecipes />
           </PrivateRouter>
+        ),
       },
       {
         path: "/all-recipe",
-       
-        element:
-          <AllRecipes/>
-        
+
+        element: <AllRecipes />,
       },
       {
         path: "/details/:id",
-        loader: ({params}) => fetch(`http://localhost:5000/details/${params.id}`),
-        element:<PrivateRouter>
-          <Details/>
-        </PrivateRouter>
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/details/${params.id}`),
+        element: (
+          <PrivateRouter>
+            <Details />
+          </PrivateRouter>
+        ),
       },
       {
-        path:'/wishlist',
-        Component:Wishlist
+        path: "/wishlist",
+        Component: Wishlist,
       },
       {
-        path:'/blog',
-        Component:BlogRecipe
+        path: "/blog",
+        Component: BlogRecipe,
       },
       {
-        path:"blog-details/:id",
-        loader: ({params}) => fetch(`http://localhost:5000/blog-details/${params.id}`),
-        element:<BlogDetails/>
-          
+        path: "blog-details/:id",
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/blog-details/${params.id}`),
+        element: <BlogDetails />,
       },
       {
-        path:'/blogs',
-        Component:Blogs
-      }
-
+        path: "/blogs",
+        Component: Blogs,
+      },
+      {
+        path: "/dashboard",
+        element: (
+          <PrivateRouter>
+            <Dashboard />
+          </PrivateRouter>
+        ),
+        children: [
+          {
+            index: true,
+            Component: Overview,
+          },
+          {
+            path: "/dashboard/overview",
+            Component: Overview,
+          },
+          {
+            path: "/dashboard/all-items",
+            Component: AllItems,
+          },
+          {
+            path: "/dashboard/my-items",
+            Component: MyItems,
+          },
+          {
+            path: "/dashboard/add-item",
+            Component: AddItem,
+          },
+        ],
+      },
     ],
   },
   {
-    path:'/',
+    path: "/",
     Component: PlanLayout,
     children: [
-    
       {
         path: "*",
         Component: PageNotFound,
-      }
-    ]
-  }
+      },
+    ],
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <UserProvider>
       <WishlistProvider>
-      <RouterProvider router={router}></RouterProvider>
+        <RecipeProvider>
+          <RouterProvider router={router}></RouterProvider>
+        </RecipeProvider>
       </WishlistProvider>
     </UserProvider>
   </StrictMode>

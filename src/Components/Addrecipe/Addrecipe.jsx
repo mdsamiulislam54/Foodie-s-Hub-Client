@@ -17,7 +17,7 @@ const Addrecipe = () => {
               below to add your recipe to our collection.
             </p>
 
-            <Link to={'add-recipe'} className="px-10 py-2 rounded-md hover:bg-primary/80 cursor-pointer bg-primary border-transparent font-fredoka font-medium text-md text-black">Add Recipe</Link>
+            <Link to={'/dashboard/add-item'} className="px-10 py-2 rounded-md hover:bg-primary/80 cursor-pointer bg-primary border-transparent font-fredoka font-medium text-md text-black">Add Recipe</Link>
           </div>
           <div>
             <img src="https://i.postimg.cc/ydnFkb8M/food-2.png" alt="" />

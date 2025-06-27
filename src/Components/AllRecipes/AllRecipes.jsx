@@ -38,7 +38,7 @@ const AllRecipes = () => {
   }, [cuisineType]);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pb-20">
       <div className="w-10/12 mx-auto">
         <div>
           <fieldset className="flex justify-between space-x-3">
